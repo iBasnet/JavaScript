@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0F111A;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.header {
+    font-family: "Nabla";
+    font-size: 7rem;
+}
+
+
+#mode {
+    font-size: 2rem;
+    background: #1E293B;
+    padding: 0.5rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+}
