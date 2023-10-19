@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background-color: #070A13;
+    color: #f1f5f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header,
+main,
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 12rem;
+    font-family: 'General Sans';
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+span {
+    -webkit-text-stroke: 1px #f1f5f9;
+    -webkit-text-fill-color: transparent;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-top: 2rem;
+    font-size: 1.3rem;
+    font-family: 'Source Code Pro';
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 0.7rem;
+}
+
+#submit {
+    background-color: #9333ea;
+    font-family: 'General Sans';
+    font-weight: 600;
+    color: #f1f5f9;
+    transition: 0.2s;
+}
+
+#submit:hover {
+    background-color: #a855f7;
+}
