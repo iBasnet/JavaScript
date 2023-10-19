@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 21/07/2023 -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Color Toggle</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            background-color: #070A13;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Clash Display', sans-serif;
+        }
+
+        .container {
+            background-color: white;
+            color: black;
+            font-size: 50px;
+            border-radius: 30px;
+            padding: 30px;
+        }
+
+        span {
+            font-weight: 600;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 15px 30px;
+            background-color: #7e22ce;
+            color: #f1f5f9;
+            font-family: 'General Sans', sans-serif;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #9333ea;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Color: <span>Blue</span></p>
+    </div>
+    <button class="btn">Change</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
