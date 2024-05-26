@@ -1,0 +1,172 @@
+:root {
+    --clr-dark: #070a13;
+    --clr-light: #f1f5f9;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    /*💡💡💡*/
+    overflow: hidden;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+header {
+    height: 5rem;
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem 5rem;
+}
+
+header .logo h1 {
+    color: var(--clr-light);
+    font-family: "Clash Display", sans-serif;
+    font-size: 3rem;
+    font-weight: normal;
+    font-weight: 600;
+}
+
+header .hamburger {
+    display: none;
+}
+
+header nav.active {
+    height: 20rem;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0rem 0.5rem;
+}
+
+header nav ul li a {
+    font-family: "Clash Display", sans-serif;
+    font-weight: 500;
+    color: var(--clr-light);
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+    border-radius: 3rem;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+}
+
+header nav ul li a.active {
+    color: var(--clr-dark);
+    background-color: var(--clr-light);
+}
+
+/* Responsiveness */
+
+/* xl */
+@media only screen and (max-width: 1280px) {
+
+    header {
+        padding: 0rem 5rem;
+    }
+}
+
+/* lg */
+@media only screen and (max-width: 1024px) {
+
+    header {
+        padding: 0rem 2rem;
+    }
+
+    header nav ul li {
+        margin: 0rem 0.2rem;
+    }
+
+    header nav ul li a {
+        font-size: 1.1rem;
+    }
+}
+
+/* md */
+@media only screen and (max-width: 764px) {
+
+    header {
+        padding: 0rem 1rem;
+    }
+
+    header .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    header .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: var(--clr-light);
+        margin: 6px 0px;
+        transition: 0.5s;
+    }
+
+    .cross .line-1 {
+        rotate: 45deg;
+        transform: translate(6.5px, 6.5px);
+    }
+
+    .cross .line-2 {
+        opacity: 0;
+    }
+
+    .cross .line-3 {
+        rotate: -45deg;
+        transform: translate(6.5px, -6.5px);
+    }
+
+    .navbar {
+        position: absolute;
+        top: 5rem;
+        left: 0;
+        right: 0;
+        background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+        width: 100vw;
+        height: 0rem;
+        /* SLIDE DOWN EFFECT */
+        transition: 0.5s;
+        /* HIDING HIDDEN ANCHOR */
+        overflow: hidden;
+    }
+
+    .navbar ul {
+        /* ENABLING VISIBILITY */
+        display: block;
+        width: fit-content;
+        /* CENTER POSITIONING */
+        margin: 3rem auto 0 auto;
+        text-align: center;
+        /*FADE OUT EFFECT*/
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .navbar.active ul {
+        opacity: 1;
+    }
+
+    .navbar ul li {
+        margin: 1.5rem 0rem;
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link
+        href="https://api.fontshare.com/v2/css?f[]=clash-display@200,300,400,500,600,700&f[]=general-sans@200,300,400,500,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <header class="animate__animated animate__flash">
+        <div class="logo animate__animated animate__tada animate__hinge animate__delay-5s">
+            <h1 class="animate__animated animate__lightSpeedInLeft animate__delay-2s">Cozey</h1>
+        </div>
+        <div class="hamburger">
+            <div class="animate__animated animate__fadeInLeft animate__delay-2s">
+                <div class="line line-1"></div>
+            </div>
+            <div class="animate__animated animate__zoomIn animate__delay-2s">
+                <div class="line line-2"></div>
+            </div>
+            <div class="animate__animated animate__fadeInRight animate__delay-2s">
+                <div class="line line-3"></div>
+            </div>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li class="animate__animated animate__fadeInRight animate__delay-2s">
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li class="animate__animated animate__fadeInRight animate__delay-2s">
+                    <a href="#">Projects</a>
+                </li>
+                <li class="animate__animated animate__fadeInRight animate__delay-2s">
+                    <a href="#">Socials</a>
+                </li>
+                <li class="animate__animated animate__fadeInRight animate__delay-2s">
+                    <a href="#">Roadmap</a>
+                </li>
+                <li class="animate__animated animate__fadeInRight animate__delay-2s">
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- JavaScript -->
+    <script>
+
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".navbar");
+            navBar.classList.toggle("active");
+            hamburger.classList.toggle("cross")
+        }
+    </script>
+</body>
+
+</html>
